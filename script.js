@@ -373,6 +373,113 @@ Your phone rings. It's her. You hit accept.`,
     final_reflection: {
         continues: 'You are alone again. The rain hasn\'t stopped. But the world outside your window feels different now. You\'ve stepped back into the current, and the tide is pulling you towards a man with a smile.',
         ends: 'You are alone again. The rain hasn\'t stopped. The world is the same as it was before. You saved a dozen people, and tomorrow you will sit in your chair and watch the world decay. Nothing has changed. You are still you.'
+    },
+    chapter2_intro: {
+        title: 'CHAPTER 2: THE LEAGUE OF EXTRAORDINARY DISAPPOINTMENTS',
+        text: `The "headquarters" is a repurposed storage room above a Vietnamese restaurant called "The Noodle Nebula." The air is a thick soup of lemongrass, stale coffee, and faint desperation. Maya leans against a stack of cardboard boxes labeled 'Seasonal Decorations - DO NOT THROW,' looking as impeccably cynical as ever.`,
+        maya_intro: `"Glad you could grace us with your presence. Meet the task force. The best I could get on our... discretionary budget."`,
+        gesture: `She gestures with her coffee cup to the four individuals scattered around the room. They look less like a superhero team and more like a support group for people who lost their powers in a tragic accident.`,
+        maya_mandate: `"Our mandate is to find Smile. Officially, we don't exist. Unofficially, we're the island of misfit toys. Play nice."`,
+        intro_line: `She introduces them, one by one, and you feel a profound, cosmic joke unfolding.`
+    },
+    team_members: {
+        chronos: {
+            name: 'CHRONOS',
+            description: 'A wiry man in his thirties, constantly checking a vintage pocket watch. His power: he always knows the exact time, down to the millisecond, in any time zone. He cannot time travel. He cannot slow time. He is a living, breathing atomic clock with anxiety.',
+            greeting: 'He looks up from his watch, a nervous tick. "It\'s 3:47:12 PM, Central Standard Time. The humidity in this room has dropped by 2% in the last four minutes. Just so you know."',
+            leadIn: 'You lean against a box of old Halloween costumes. "You\'re thinking too small. You\'re a human stopwatch. Do you have any idea how useful that is?"',
+            options: [
+                {
+                    id: 'breaches',
+                    text: '"We could use you to perfectly time coordinated breaches."',
+                    response: '"Imagine," you say. "One team goes in at 0.000 seconds. Another at 17.283 seconds. Not a second of overlap, not a moment of confusion. You wouldn\'t just be a guy with a watch; you\'d be the conductor of the entire operation." Chronos\'s eyes widen. For the first time, he looks at his watch not with obsession, but with purpose. "I... I could do that. I could be the conductor."'
+                },
+                {
+                    id: 'lie-detector',
+                    text: '"You could be the ultimate lie detector by measuring a subject\'s pulse against a perfect timeline."',
+                    response: '"You don\'t need to hear their words," you explain. "You just need to feel their pulse and sync it to your internal clock. Any spike, any hesitation that doesn\'t align with a perfect rhythm... that\'s the truth, screaming in temporal dissonance." Chronos stares at you, then at his own wrist. "My god... I\'m a walking polygraph."'
+                },
+                {
+                    id: 'olympics',
+                    text: '"You could make a fortune as a track and field official."',
+                    response: 'You shrug. "The Olympics pay well. No one ever argues with the clock." Chronos blinks, then a slow smile spreads across his face. "The 100-meter dash record is 9.58 seconds. I could measure that." He seems genuinely happy for a moment, contemplating a life of judging the world\'s fastest humans instead of saving it.'
+                }
+            ]
+        },
+        aura: {
+            name: 'AURA',
+            description: 'A woman who seems to be perpetually blushing. Her power: she can, at will, make any inanimate object she touches slightly glow in a soft, pastel color of her choosing. It provides no heat, no light beyond that of a weak nightlight, and is utterly harmless.',
+            greeting: 'She\'s making a stapler glow a faint, embarrassed pink. "It\'s not much," she mumbles.',
+            leadIn: '"On the contrary," you say, picking up a pen. "You\'re thinking like a glowstick. Think like a strategist."',
+            options: [
+                {
+                    id: 'invisible-marker',
+                    text: '"You could mark targets or objects invisibly to us, but visible to anyone with a simple filter."',
+                    response: '"Infrared and ultraviolet are just colors," you say. "Your power might be generating a specific light frequency. We get night-vision goggles with a specific filter... and you become our invisible marker. You could tag Smile\'s lieutenant, and we\'d see him glowing like a Christmas tree in a crowd." Aura stops blushing. "I... I never thought of it as a frequency."'
+                },
+                {
+                    id: 'signals',
+                    text: '"In a dark room, you could silently designate a meeting point or a weapon with a specific color."',
+                    response: '"No comms needed," you state. "A sudden blue glow in the corner means \'rally point.\' A red glow on a shotgun means \'this one is loaded.\' You\'re a walking, talking traffic light for covert ops." She looks at her hands, now seeing not just a soft light, but a signal flare. "I can do traffic light," she says, with newfound confidence.'
+                },
+                {
+                    id: 'confusion',
+                    text: '"You could cause mass confusion by making every exit sign glow a different, incorrect color."',
+                    response: '"A simple, non-lethal act of chaos," you muse. "Make the \'EXIT\' sign glow green, the \'RESTROOM\' sign glow red. People\'s brains short-circuit. In that moment of confusion, we walk right through." A small, mischievous smile plays on her lips. "I like that. It\'s... politely disruptive."'
+                }
+            ]
+        },
+        polyglot: {
+            name: 'POLYGLOT',
+            description: 'A young man with headphones around his neck. His power: he can understand and speak any language, but only if it\'s a dead language. Latin, Ancient Greek, Sumerian, Linear B. He is currently trying to order Thai food using Middle Egyptian hieroglyphs and failing.',
+            greeting: 'He\'s muttering what sounds like curses in Proto-Indo-European at his phone. "The delivery app does not recognize the term \'bread-and-beer-please\' in Akkadian."',
+            leadIn: '"You\'re a historian with a direct line to the past," you tell him. "What would Cicero think of Smile?"',
+            options: [
+                {
+                    id: 'histrio',
+                    text: '"He\'d call him a \'histrio,\' a mere actor, not a true statesman of crime."',
+                    response: 'Polyglot\'s eyes light up. "Planissime! Most clearly! Yes! Cicero would dismiss him as a performer, lacking the gravitas of a true threat like Catiline! He seeks applause, not power!" He seems immensely relieved to frame the modern world through an ancient lens. "We are not fighting a monster. We are booing a bad actor."'
+                },
+                {
+                    id: 'precedents',
+                    text: '"Ask him if there are any ancient precedents for this kind of psychological warfare."',
+                    response: '"Sun Tzu!" he exclaims. "The supreme art of war is to subdue the enemy without fighting. And the Scythians... they would use rumors and strange signs to terrify their foes before battle! Smile is not new. He is... archaic!" He now sees Smile not as an enigmatic futurist, but as a cheap plagiarist of ancient tactics.'
+                },
+                {
+                    id: 'blueprints',
+                    text: '"Tell him his power is the ultimate way to decipher archaic building blueprints."',
+                    response: '"You think Smile is using old infrastructure? Sewers, forgotten passages?" You nod. "The city\'s bones are old. Their plans were written in languages no one else can read. Except you." Polyglot looks like he\'s just been handed the Rosetta Stone. "The aqueduct schematics... the original subway tunnels... by the gods, you\'re right! I can read the city\'s skeleton!"'
+                }
+            ]
+        },
+        decibel: {
+            name: 'DECIBEL',
+            description: 'A woman dressed in what looks like a punk rocker\'s laundry pile. Her power: she can replicate any sound she has heard with perfect pitch and volume, but only at a conversational level. She can imitate a gunshot, but it will sound like someone politely saying "bang."',
+            greeting: 'She demonstrates by perfectly imitating the sound of a tea kettle boiling, followed by the squeak of a rusty hinge. "My greatest hits," she says dryly.',
+            leadIn: '"You\'re an audio engineer of chaos," you correct her. "You\'re not making noise. You\'re crafting a narrative."',
+            options: [
+                {
+                    id: 'lock-sound',
+                    text: '"You could replicate the specific sound of a key turning in a lock from down the hall."',
+                    response: '"Distraction," you say. "A guard hears his post being unlocked behind him. He turns to look. We go in the front." Decibel\'s bored expression vanishes. She closes her eyes, and you hear the precise, metallic click-clunk of a high-security deadbolt from the far side of the room. "I can make them look the wrong way," she whispers, a grin spreading.'
+                },
+                {
+                    id: 'coded-knock',
+                    text: '"You could imitate the distinct, coded knock of a high-level operative."',
+                    response: '"Access," you state simply. "You hear the knock, you open the door. No questions asked." She practices, tapping a rhythm on the table that sounds both specific and authoritative. "I\'m a skeleton key," she says, her punk-rock demeanor now looking like a perfectly crafted disguise.'
+                },
+                {
+                    id: 'voice-mimic',
+                    text: '"You could perfectly mimic the sound of Smile\'s own voice giving a counter-order."',
+                    response: '"The ultimate weapon," you tell her. "In the middle of his operation, his own voice calls out \'Abort! It\'s a trap!\' The confusion would be absolute." Decibel\'s eyes gleam with malevolent creativity. "I could make his own army turn on him. I could make him doubt his own commands. That... is art."'
+                }
+            ]
+        }
+    },
+    chapter2_conclusion: {
+        maya_reaction: `Maya watches the entire exchange, a rare, genuine smile touching her lips. "Well, I'll be damned. You didn't just give them a pep talk. You gave them a software update."`,
+        file_intro: `She tosses a file onto the table. It's blank except for a single, crudely drawn smiley face.`,
+        maya_briefing: `"Our first lead. A warehouse down by the docks. Smile's people are using it as a drop point. Let's go see if our new and improved League of Extraordinary Disappointments can actually disappoint a real villain for once."`
     }
 };
 
@@ -1221,30 +1328,17 @@ function showFinalOutcome(finalChoice) {
     }).join(' → ');
     
     if (finalChoice.continues) {
-        // Story continues
+        // Story continues to Chapter 2
         choicesDiv.innerHTML = `
             <div class="final-outcome continues-outcome">
                 <h3 style="text-align: center; color: #b8860b; margin-bottom: 20px;">
-                    CHAPTER COMPLETE: ${finalChoice.endingType}
+                    CHAPTER 1 COMPLETE: ${finalChoice.endingType}
                 </h3>
-                <div class="character-summary">
-                    <p style="text-indent: 0; margin-bottom: 15px;"><strong>Your Complete Journey:</strong></p>
-                    <p style="text-indent: 0;">Hero Name: <span style="color: #b8860b;">${gameState.heroName}</span></p>
-                    <p style="text-indent: 0;">Companion: <span style="color: #b8860b;">${gameState.dogName}</span></p>
-                    <p style="text-indent: 0;">Martial Art: <span style="color: #b8860b;">${martialArtName}</span></p>
-                    <p style="text-indent: 0;">Bank Entry: <span style="color: #b8860b;">${approachNames[gameState.bankApproach]}</span></p>
-                    <p style="text-indent: 0;">Combat: <span style="color: #999; font-size: 0.9em;">${combatSummary}</span></p>
-                    <p style="text-indent: 0;">Perspective: <span style="color: #999; font-size: 0.9em;">${mayaSummary}</span></p>
-                    <p style="text-indent: 0;">Motivation: <span style="color: #b8860b;">${finalChoice.endingType}</span></p>
-                    <p style="text-indent: 0; text-align: center; margin-top: 30px; font-style: italic; color: #b8860b;">
-                        To be continued...
-                    </p>
-                    <p style="text-indent: 0; text-align: center; margin-top: 10px; font-style: italic; color: #888;">
-                        (The hunt for Smile continues in the next chapter)
-                    </p>
-                </div>
+                <button class="submit-button" id="start-chapter2">Continue to Chapter 2</button>
             </div>
         `;
+        
+        document.getElementById('start-chapter2').addEventListener('click', startChapter2);
     } else {
         // Story ends - player refuses to continue
         choicesDiv.innerHTML = `
@@ -1270,6 +1364,220 @@ function showFinalOutcome(finalChoice) {
     }
     
     // Scroll to the result
+    choicesDiv.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Start Chapter 2
+function startChapter2() {
+    const chapter2Data = storyContent.chapter2_intro;
+    const storyDiv = document.getElementById('story-content');
+    
+    // Initialize Chapter 2 game state
+    gameState.chapter = 2;
+    gameState.teamTalkedTo = [];
+    gameState.teamChoices = {};
+    
+    // Build Chapter 2 intro
+    let html = `<h2 style="text-align: center; color: #b8860b; margin-bottom: 20px;">${chapter2Data.title}</h2>`;
+    html += `<p>${chapter2Data.text}</p>`;
+    html += `<div class="comm-message"><div class="comm-header">MAYA:</div><div class="comm-text">${chapter2Data.maya_intro}</div></div>`;
+    html += `<p>${chapter2Data.gesture}</p>`;
+    html += `<div class="comm-message"><div class="comm-header">MAYA:</div><div class="comm-text">${chapter2Data.maya_mandate}</div></div>`;
+    html += `<p>${chapter2Data.intro_line}</p>`;
+    
+    // Add team member descriptions
+    const teamMembers = storyContent.team_members;
+    Object.keys(teamMembers).forEach(key => {
+        const member = teamMembers[key];
+        html += `<p class="team-member-intro"><strong>${member.name}:</strong> ${member.description}</p>`;
+    });
+    
+    html += `<p style="margin-top: 20px;">You stare. The fate of the city, perhaps the world, rests on this. You almost want to find Smile just to apologize.</p>`;
+    html += `<div class="comm-message"><div class="comm-header">MAYA:</div><div class="comm-text">"I know. Try not to be too impressed. Your job is to make them... not a complete liability."</div></div>`;
+    
+    storyDiv.innerHTML = html;
+    
+    // Show team selection menu
+    showTeamSelection();
+    
+    // Scroll to content
+    storyDiv.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Show team selection menu
+function showTeamSelection() {
+    const choicesDiv = document.getElementById('choices-container');
+    const talkedTo = gameState.teamTalkedTo || [];
+    
+    let html = '<div class="team-selection">';
+    html += '<div class="choice-label">Who do you approach first?</div>';
+    html += '<div class="action-choices team-choices">';
+    
+    const teamMembers = storyContent.team_members;
+    const memberKeys = ['chronos', 'aura', 'polyglot', 'decibel'];
+    
+    memberKeys.forEach(key => {
+        const member = teamMembers[key];
+        const talked = talkedTo.includes(key);
+        const statusClass = talked ? 'team-talked' : '';
+        const checkmark = talked ? ' ✓' : '';
+        
+        html += `
+            <button class="action-choice-button team-member-button ${statusClass}" 
+                    data-member="${key}" 
+                    ${talked ? 'disabled' : ''}>
+                Talk to ${member.name}${checkmark}
+            </button>
+        `;
+    });
+    
+    html += '</div></div>';
+    
+    choicesDiv.innerHTML = html;
+    
+    // Add event listeners
+    const memberButtons = document.querySelectorAll('.team-member-button:not([disabled])');
+    memberButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const memberKey = this.getAttribute('data-member');
+            showTeamMemberInteraction(memberKey);
+        });
+    });
+}
+
+// Show team member interaction
+function showTeamMemberInteraction(memberKey) {
+    const member = storyContent.team_members[memberKey];
+    const storyDiv = document.getElementById('story-content');
+    
+    // Add greeting and lead-in to story
+    const currentHtml = storyDiv.innerHTML;
+    let html = currentHtml;
+    html += `<h3 style="color: #b8860b; margin-top: 30px;">${member.name}</h3>`;
+    html += `<p>${member.greeting}</p>`;
+    html += `<p>${member.leadIn}</p>`;
+    
+    storyDiv.innerHTML = html;
+    
+    // Show options for this member
+    const choicesDiv = document.getElementById('choices-container');
+    let choicesHtml = '<div class="team-member-options"><div class="action-choices">';
+    
+    member.options.forEach(option => {
+        choicesHtml += `
+            <button class="action-choice-button team-option-button" 
+                    data-member="${memberKey}" 
+                    data-option="${option.id}">
+                ${option.text}
+            </button>
+        `;
+    });
+    
+    choicesHtml += '</div></div>';
+    
+    choicesDiv.innerHTML = choicesHtml;
+    
+    // Add event listeners
+    const optionButtons = document.querySelectorAll('.team-option-button');
+    optionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const member = this.getAttribute('data-member');
+            const optionId = this.getAttribute('data-option');
+            handleTeamMemberChoice(member, optionId);
+        });
+    });
+    
+    // Scroll to new content
+    storyDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
+// Handle team member choice
+function handleTeamMemberChoice(memberKey, optionId) {
+    const member = storyContent.team_members[memberKey];
+    const option = member.options.find(o => o.id === optionId);
+    
+    if (!option) return;
+    
+    // Store the choice
+    if (!gameState.teamChoices) gameState.teamChoices = {};
+    gameState.teamChoices[memberKey] = optionId;
+    
+    if (!gameState.teamTalkedTo) gameState.teamTalkedTo = [];
+    gameState.teamTalkedTo.push(memberKey);
+    
+    // Add response to story
+    const storyDiv = document.getElementById('story-content');
+    const currentHtml = storyDiv.innerHTML;
+    storyDiv.innerHTML = currentHtml + `<p class="team-response">${option.response}</p>`;
+    
+    // Check if all team members have been talked to
+    if (gameState.teamTalkedTo.length === 4) {
+        // Show conclusion
+        setTimeout(() => showChapter2Conclusion(), 500);
+    } else {
+        // Return to team selection
+        const choicesDiv = document.getElementById('choices-container');
+        choicesDiv.innerHTML = '<button class="submit-button" id="back-to-team">Continue</button>';
+        
+        document.getElementById('back-to-team').addEventListener('click', function() {
+            showTeamSelection();
+        });
+    }
+    
+    // Scroll to new content
+    storyDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
+// Show Chapter 2 conclusion
+function showChapter2Conclusion() {
+    const conclusionData = storyContent.chapter2_conclusion;
+    const storyDiv = document.getElementById('story-content');
+    
+    // Add Maya's reaction
+    const currentHtml = storyDiv.innerHTML;
+    let html = currentHtml;
+    html += `<p style="margin-top: 30px;">${conclusionData.maya_reaction}</p>`;
+    html += `<p>${conclusionData.file_intro}</p>`;
+    html += `<div class="comm-message maya-briefing"><div class="comm-header">MAYA:</div><div class="comm-text">${conclusionData.maya_briefing}</div></div>`;
+    
+    storyDiv.innerHTML = html;
+    
+    // Show completion message
+    const choicesDiv = document.getElementById('choices-container');
+    const martialArtName = martialArts.find(art => art.id === gameState.martialArt).name;
+    
+    // Build team upgrade summary
+    const teamSummary = Object.entries(gameState.teamChoices).map(([member, choice]) => {
+        const memberName = storyContent.team_members[member].name;
+        return `${memberName}: ${choice}`;
+    }).join(', ');
+    
+    choicesDiv.innerHTML = `
+        <div class="final-outcome continues-outcome">
+            <h3 style="text-align: center; color: #b8860b; margin-bottom: 20px;">
+                CHAPTER 2 COMPLETE
+            </h3>
+            <div class="character-summary">
+                <p style="text-indent: 0; margin-bottom: 15px;"><strong>Your Story Continues:</strong></p>
+                <p style="text-indent: 0;">Hero Name: <span style="color: #b8860b;">${gameState.heroName}</span></p>
+                <p style="text-indent: 0;">Martial Art: <span style="color: #b8860b;">${martialArtName}</span></p>
+                <p style="text-indent: 0;">Motivation: <span style="color: #b8860b;">${gameState.mayaChoices[2] === 'interested' ? 'Understanding' : 'Money'}</span></p>
+                <p style="text-indent: 0; margin-top: 15px;"><strong>Team Upgraded:</strong></p>
+                <p style="text-indent: 0; font-size: 0.9em; color: #999;">Chronos: ${gameState.teamChoices.chronos || 'none'}</p>
+                <p style="text-indent: 0; font-size: 0.9em; color: #999;">Aura: ${gameState.teamChoices.aura || 'none'}</p>
+                <p style="text-indent: 0; font-size: 0.9em; color: #999;">Polyglot: ${gameState.teamChoices.polyglot || 'none'}</p>
+                <p style="text-indent: 0; font-size: 0.9em; color: #999;">Decibel: ${gameState.teamChoices.decibel || 'none'}</p>
+                <p style="text-indent: 0; text-align: center; margin-top: 30px; font-style: italic; color: #b8860b;">
+                    To be continued...
+                </p>
+                <p style="text-indent: 0; text-align: center; margin-top: 10px; font-style: italic; color: #888;">
+                    (The warehouse mission awaits in the next chapter)
+                </p>
+            </div>
+        </div>
+    `;
+    
+    // Scroll to conclusion
     choicesDiv.scrollIntoView({ behavior: 'smooth' });
 }
 

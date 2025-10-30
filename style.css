@@ -418,6 +418,76 @@ body {
     letter-spacing: 2px;
 }
 
+.team-member-intro {
+    background: rgba(30, 30, 20, 0.5);
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-left: 3px solid #666;
+}
+
+.team-member-intro strong {
+    color: #b8860b;
+    font-size: 1.1em;
+}
+
+.team-selection {
+    margin-top: 20px;
+}
+
+.team-choices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.team-member-button {
+    border-color: #b8860b !important;
+    background: #1a1a0d !important;
+}
+
+.team-member-button:hover:not([disabled]) {
+    border-color: #d4a844 !important;
+    background: #2a2a15 !important;
+}
+
+.team-talked {
+    border-color: #4a6a4a !important;
+    background: #0f1a0f !important;
+    color: #8aff8a !important;
+    opacity: 0.6;
+    cursor: not-allowed !important;
+}
+
+.team-member-options {
+    margin-top: 20px;
+}
+
+.team-option-button {
+    font-size: 0.95em;
+    padding: 15px 18px;
+}
+
+.team-response {
+    background: rgba(40, 30, 20, 0.6);
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #b8860b;
+    font-style: italic;
+    color: #d4d4d4;
+}
+
+.maya-briefing {
+    background: #0f1a0f;
+    border-color: #4a6a4a;
+    border-left-color: #6aff6a;
+    margin-top: 20px;
+}
+
+.maya-briefing .comm-header {
+    color: #8aff8a;
+}
+
 .footer {
     text-align: center;
     padding: 20px;
