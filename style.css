@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(to bottom, #1a1a1a 0%, #0d0d0d 100%);
+    color: #d4d4d4;
+    line-height: 1.8;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 2px solid #444;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #b8860b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.story-text {
+    background: rgba(20, 20, 20, 0.7);
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.story-text h2 {
+    color: #b8860b;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.story-text p {
+    margin-bottom: 15px;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.choices-container {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+}
+
+.choice-group {
+    margin-bottom: 25px;
+}
+
+.choice-label {
+    display: block;
+    color: #b8860b;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-input {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 2px solid #444;
+    color: #d4d4d4;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    border-radius: 3px;
+    transition: border-color 0.3s;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #b8860b;
+}
+
+.martial-arts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.martial-art-option {
+    background: #1a1a1a;
+    border: 2px solid #444;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.martial-art-option:hover {
+    border-color: #b8860b;
+    background: #252525;
+}
+
+.martial-art-option.selected {
+    border-color: #b8860b;
+    background: #2a2a0d;
+}
+
+.martial-art-option input[type="radio"] {
+    display: none;
+}
+
+.martial-art-title {
+    color: #b8860b;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.martial-art-description {
+    color: #999;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background: #1a1a0d;
+    border: 2px solid #b8860b;
+    color: #b8860b;
+    font-size: 1.2em;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background: #b8860b;
+    color: #1a1a1a;
+}
+
+.submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+}
+
+.action-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.action-choice-button {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #444;
+    color: #d4d4d4;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+.action-choice-button:hover {
+    border-color: #b8860b;
+    background: #252525;
+    transform: translateX(5px);
+}
+
+.approach-choice {
+    font-size: 0.95em;
+    padding: 12px 18px;
+}
+
+.character-summary {
+    background: rgba(20, 20, 20, 0.7);
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+.character-summary p {
+    margin-bottom: 8px;
+}
+
+.phone-message {
+    background: #0a0a0a;
+    border: 2px solid #333;
+    border-left: 4px solid #b8860b;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.phone-header {
+    color: #b8860b;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.phone-text {
+    color: #d4d4d4;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+.phone-location {
+    color: #888;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.critical-choice {
+    color: #ff6b6b !important;
+    font-size: 1.2em !important;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ending-choice {
+    border-color: #666 !important;
+}
+
+.ending-choice:hover {
+    border-color: #888 !important;
+    background: #1a1a1a !important;
+}
+
+.ending-container {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.ending-title {
+    font-size: 2em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.combat-choices {
+    margin-top: 20px;
+}
+
+.combat-choice {
+    border-color: #ff6b6b !important;
+    background: #1a0a0a !important;
+}
+
+.combat-choice:hover {
+    border-color: #ff8888 !important;
+    background: #2a1010 !important;
+}
+
+.combat-outcome {
+    background: rgba(30, 20, 20, 0.5);
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-left: 3px solid #ff6b6b;
+    font-style: italic;
+}
+
+.combat-result {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.lethal-result {
+    border: 2px solid #ff6b6b;
+}
+
+.nonlethal-result {
+    border: 2px solid #b8860b;
+}
+
+.combat-result h3 {
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+.comm-message {
+    background: #0f0f1a;
+    border: 2px solid #4a4a6a;
+    border-left: 4px solid #6a6aff;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+.comm-header {
+    color: #8a8aff;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+
+.comm-text {
+    color: #d4d4d4;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.maya-reply {
+    background: #0f1a0f;
+    border-color: #4a6a4a;
+    border-left-color: #6aff6a;
+}
+
+.maya-reply .comm-header {
+    color: #8aff8a;
+}
+
+.player-response {
+    background: rgba(40, 30, 20, 0.5);
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-left: 3px solid #b8860b;
+    color: #d4d4d4;
+    font-style: italic;
+}
+
+.pause-text {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+.maya-choices {
+    margin-top: 20px;
+}
+
+.maya-choice {
+    border-color: #6a6aff !important;
+    background: #0a0a15 !important;
+}
+
+.maya-choice:hover {
+    border-color: #8a8aff !important;
+    background: #15152a !important;
+}
+
+.final-reflection {
+    background: rgba(20, 20, 30, 0.7);
+    padding: 25px;
+    margin: 30px 0;
+    border: 2px solid #b8860b;
+    border-radius: 5px;
+    font-style: italic;
+    text-align: center;
+    color: #d4d4d4;
+}
+
+.final-outcome {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.continues-outcome {
+    border: 2px solid #b8860b;
+}
+
+.ending-outcome {
+    border: 2px solid #666;
+}
+
+.final-outcome h3 {
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+/* Rain effect */
+.rain-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.1;
+    background: repeating-linear-gradient(
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.03) 2px,
+        rgba(255, 255, 255, 0.03) 4px
+    );
+    animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 20px;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8em;
+        letter-spacing: 2px;
+    }
+    
+    .story-text {
+        padding: 20px;
+    }
+    
+    .story-text p {
+        text-indent: 1em;
+    }
+}
+
